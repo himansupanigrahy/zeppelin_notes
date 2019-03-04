@@ -52,18 +52,69 @@
       "progressUpdateIntervalMs": 500
     },
     {
+      "text": "%spark\n\nval count \u003d sc.parallelize(1 to 5).filter { _ \u003d\u003e\n  val x \u003d math.random\n  val y \u003d math.random\n  x*x + y*y \u003c 1\n}.count()\nprintln(s\"Pi is roughly ${4.0 * count / 5}\")",
+      "user": "anonymous",
+      "dateUpdated": "2019-03-04 06:42:14.692",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "count: Long \u003d 3\nPi is roughly 2.4\n"
+          }
+        ]
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "http://10.217.6.125:4040/jobs/job?id\u003d1"
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "apps": [],
+      "jobName": "paragraph_1551670010804_159911",
+      "id": "20190304-032650_941474026",
+      "dateCreated": "2019-03-04 03:26:50.804",
+      "dateStarted": "2019-03-04 06:42:14.711",
+      "dateFinished": "2019-03-04 06:42:15.840",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "text": "%spark\n",
       "user": "anonymous",
-      "dateUpdated": "2019-03-04 03:26:50.806",
+      "dateUpdated": "2019-03-04 06:39:56.620",
       "config": {},
       "settings": {
         "params": {},
         "forms": {}
       },
       "apps": [],
-      "jobName": "paragraph_1551670010804_159911",
-      "id": "20190304-032650_941474026",
-      "dateCreated": "2019-03-04 03:26:50.804",
+      "jobName": "paragraph_1551681596620_-156764942",
+      "id": "20190304-063956_593781542",
+      "dateCreated": "2019-03-04 06:39:56.620",
       "status": "READY",
       "progressUpdateIntervalMs": 500
     }
@@ -73,6 +124,7 @@
   "noteParams": {},
   "noteForms": {},
   "angularObjects": {
+    "python:shared_process": [],
     "spark:shared_process": []
   },
   "config": {
