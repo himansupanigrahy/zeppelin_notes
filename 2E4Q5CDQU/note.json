@@ -4,7 +4,7 @@
       "title": "Number of Cars per Brand",
       "text": "%cassandra\nselect * from evready.car;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 08:42:16.511",
+      "dateUpdated": "2019-03-05 08:45:49.428",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -128,7 +128,7 @@
       "title": "Overall Number of Cars",
       "text": "%cassandra\nselect * from evready.car;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 08:42:16.590",
+      "dateUpdated": "2019-03-05 08:45:49.521",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -233,7 +233,7 @@
       "title": "Number of Drives per User",
       "text": "%cassandra\nselect * from evready.drive;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 08:42:16.636",
+      "dateUpdated": "2019-03-05 08:45:49.628",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -338,7 +338,7 @@
       "title": "Number of Users",
       "text": "%cassandra\nselect * from evready.user;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 08:42:16.675",
+      "dateUpdated": "2019-03-05 08:45:49.718",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -424,7 +424,7 @@
       "title": "Number of Waypoints per Drive",
       "text": "%cassandra\nselect * from evready.waypoints;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 08:42:16.711",
+      "dateUpdated": "2019-03-05 08:45:49.780",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
