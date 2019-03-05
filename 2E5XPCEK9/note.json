@@ -1,6 +1,22 @@
 {
   "paragraphs": [
     {
+      "text": "%jdbc\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-03-05 08:10:05.839",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1551773405838_-1369523811",
+      "id": "20190305-081005_364050739",
+      "dateCreated": "2019-03-05 08:10:05.838",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "text": "%jdbc\nselect * from ${table} limit 10;",
       "user": "anonymous",
       "dateUpdated": "2019-03-04 12:01:21.816",
