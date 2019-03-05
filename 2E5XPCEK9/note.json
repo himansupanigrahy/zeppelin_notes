@@ -1,0 +1,113 @@
+{
+  "paragraphs": [
+    {
+      "text": "%jdbc\nselect * from ${table} limit 10;",
+      "user": "anonymous",
+      "dateUpdated": "2019-03-04 12:01:21.816",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 300.0,
+              "optionOpen": false,
+              "setting": {
+                "table": {
+                  "tableGridState": {},
+                  "tableColumnTypeState": {
+                    "names": {
+                      "name": "string",
+                      "firstname": "string",
+                      "city": "string"
+                    },
+                    "updated": false
+                  },
+                  "tableOptionSpecHash": "[{\"name\":\"useFilter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable filter for columns\"},{\"name\":\"showPagination\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable pagination for better navigation\"},{\"name\":\"showAggregationFooter\",\"valueType\":\"boolean\",\"defaultValue\":false,\"widget\":\"checkbox\",\"description\":\"Enable a footer for displaying aggregated values\"}]",
+                  "tableOptionValue": {
+                    "useFilter": false,
+                    "showPagination": false,
+                    "showAggregationFooter": false
+                  },
+                  "updated": false,
+                  "initialized": false
+                }
+              },
+              "commonSetting": {}
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {
+          "table": "testtable"
+        },
+        "forms": {
+          "table": {
+            "type": "TextBox",
+            "name": "table",
+            "defaultValue": "",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "name\tfirstname\tcity\nDampf\tHans\tnowhere\nMax\tMoritz\tUlm\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1551699490184_-1087438017",
+      "id": "20190304-113810_1601404755",
+      "dateCreated": "2019-03-04 11:38:10.184",
+      "dateStarted": "2019-03-04 12:01:18.364",
+      "dateFinished": "2019-03-04 12:01:21.013",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {
+          "table": "testtable"
+        },
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1551699658955_-1371732875",
+      "id": "20190304-114058_230124005",
+      "dateCreated": "2019-03-04 11:40:58.955",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "DataLoad Demo - CRDB",
+  "id": "2E5XPCEK9",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "python:shared_process": [],
+    "jdbc:shared_process": [],
+    "spark:shared_process": [],
+    "cassandra:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
