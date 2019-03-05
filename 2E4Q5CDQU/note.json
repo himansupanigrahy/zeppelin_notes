@@ -4,7 +4,7 @@
       "title": "Number of Cars per Brand",
       "text": "%cassandra\nselect * from evready.car;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 04:21:55.476",
+      "dateUpdated": "2019-03-05 08:42:16.511",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -128,7 +128,7 @@
       "title": "Overall Number of Cars",
       "text": "%cassandra\nselect * from evready.car;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 04:21:55.505",
+      "dateUpdated": "2019-03-05 08:42:16.590",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -233,7 +233,7 @@
       "title": "Number of Drives per User",
       "text": "%cassandra\nselect * from evready.drive;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 04:21:55.521",
+      "dateUpdated": "2019-03-05 08:42:16.636",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -338,7 +338,7 @@
       "title": "Number of Users",
       "text": "%cassandra\nselect * from evready.user;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 04:21:55.538",
+      "dateUpdated": "2019-03-05 08:42:16.675",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -424,7 +424,7 @@
       "title": "Number of Waypoints per Drive",
       "text": "%cassandra\nselect * from evready.waypoints;",
       "user": "anonymous",
-      "dateUpdated": "2019-03-05 04:21:55.575",
+      "dateUpdated": "2019-03-05 08:42:16.711",
       "config": {
         "editorSetting": {
           "editOnDblClick": false
@@ -551,12 +551,7 @@
   "id": "2E4Q5CDQU",
   "noteParams": {},
   "noteForms": {},
-  "angularObjects": {
-    "python:shared_process": [],
-    "jdbc:shared_process": [],
-    "spark:shared_process": [],
-    "cassandra:shared_process": []
-  },
+  "angularObjects": {},
   "config": {
     "isZeppelinNotebookCronEnable": false
   },
