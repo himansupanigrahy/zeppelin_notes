@@ -1,0 +1,79 @@
+{
+  "paragraphs": [
+    {
+      "text": "%jdbc\nselect * from ${table} limit 10;",
+      "user": "anonymous",
+      "dateUpdated": "2019-03-04 11:49:32.287",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sql",
+          "editOnDblClick": false,
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {
+          "table": {
+            "type": "TextBox",
+            "name": "table",
+            "defaultValue": "",
+            "hidden": false
+          }
+        }
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.\n\tat org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:239)\n\tat org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:66)\n\tat org.postgresql.jdbc2.AbstractJdbc2Connection.\u003cinit\u003e(AbstractJdbc2Connection.java:127)\n\tat org.postgresql.jdbc3.AbstractJdbc3Connection.\u003cinit\u003e(AbstractJdbc3Connection.java:29)\n\tat org.postgresql.jdbc3g.AbstractJdbc3gConnection.\u003cinit\u003e(AbstractJdbc3gConnection.java:21)\n\tat org.postgresql.jdbc4.AbstractJdbc4Connection.\u003cinit\u003e(AbstractJdbc4Connection.java:41)\n\tat org.postgresql.jdbc4.Jdbc4Connection.\u003cinit\u003e(Jdbc4Connection.java:24)\n\tat org.postgresql.Driver.makeConnection(Driver.java:414)\n\tat org.postgresql.Driver.connect(Driver.java:282)\n\tat java.sql.DriverManager.getConnection(DriverManager.java:664)\n\tat java.sql.DriverManager.getConnection(DriverManager.java:208)\n\tat org.apache.commons.dbcp2.DriverManagerConnectionFactory.createConnection(DriverManagerConnectionFactory.java:79)\n\tat org.apache.commons.dbcp2.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:205)\n\tat org.apache.commons.pool2.impl.GenericObjectPool.create(GenericObjectPool.java:836)\n\tat org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:434)\n\tat org.apache.commons.pool2.impl.GenericObjectPool.borrowObject(GenericObjectPool.java:361)\n\tat org.apache.commons.dbcp2.PoolingDriver.connect(PoolingDriver.java:129)\n\tat java.sql.DriverManager.getConnection(DriverManager.java:664)\n\tat java.sql.DriverManager.getConnection(DriverManager.java:270)\n\tat org.apache.zeppelin.jdbc.JDBCInterpreter.getConnectionFromPool(JDBCInterpreter.java:410)\n\tat org.apache.zeppelin.jdbc.JDBCInterpreter.getConnection(JDBCInterpreter.java:428)\n\tat org.apache.zeppelin.jdbc.JDBCInterpreter.executeSql(JDBCInterpreter.java:673)\n\tat org.apache.zeppelin.jdbc.JDBCInterpreter.interpret(JDBCInterpreter.java:801)\n\tat org.apache.zeppelin.interpreter.LazyOpenInterpreter.interpret(LazyOpenInterpreter.java:103)\n\tat org.apache.zeppelin.interpreter.remote.RemoteInterpreterServer$InterpretJob.jobRun(RemoteInterpreterServer.java:633)\n\tat org.apache.zeppelin.scheduler.Job.run(Job.java:188)\n\tat org.apache.zeppelin.scheduler.ParallelScheduler$JobRunner.run(ParallelScheduler.java:162)\n\tat java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)\n\tat java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)\n\tat java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)\n\tat java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)\n\tat java.lang.Thread.run(Thread.java:748)\nCaused by: java.net.ConnectException: Connection refused (Connection refused)\n\tat java.net.PlainSocketImpl.socketConnect(Native Method)\n\tat java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)\n\tat java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)\n\tat java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)\n\tat java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)\n\tat java.net.Socket.connect(Socket.java:589)\n\tat org.postgresql.core.PGStream.\u003cinit\u003e(PGStream.java:61)\n\tat org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:121)\n\t... 33 more\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1551700132623_792164369",
+      "id": "20190304-114852_1511498552",
+      "dateCreated": "2019-03-04 11:48:52.623",
+      "dateStarted": "2019-03-04 11:56:31.515",
+      "dateFinished": "2019-03-04 11:56:31.525",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%jdbc\n",
+      "user": "anonymous",
+      "dateUpdated": "2019-03-04 11:49:32.288",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1551700172287_184060180",
+      "id": "20190304-114932_1064396054",
+      "dateCreated": "2019-03-04 11:49:32.287",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "DataLoad Demo - MDB",
+  "id": "2E4B73FBK",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "python:shared_process": [],
+    "jdbc:shared_process": [],
+    "spark:shared_process": [],
+    "cassandra:shared_process": []
+  },
+  "config": {
+    "isZeppelinNotebookCronEnable": false
+  },
+  "info": {}
+}
